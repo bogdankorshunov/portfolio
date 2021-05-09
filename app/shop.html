@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Product list 1</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+  <nav class="header__nav">
+
+    <a class="logo" href="/">
+      <img class="logo__img" src="images/logo.png" alt="logo">
+    </a>
+
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link " href="#">Home +</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="about.html">About</a>
+        
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Services</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Pages +</a>
+        <ul class="dropdown">
+          <li class="dropdown__item"><a class="dropdown__link" href="about.html">About</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="blog.html">Blog</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="blog-post.html">Blog Post</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="contact.html">Contact</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="login.html">Login</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="shop.html">Shop</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="product.html">Product</a></li>
+        </ul>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">News</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <div class="header__actions">
+      <button class="header__search-btn icon-box" href="#">
+        <svg class="header__search-icon search-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+        </svg>
+      </button>
+      <div class="header__actions-group">
+        <a class="header__like-link" href="#">
+          <svg class="header__like-icon like-icon icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon"></use>
+          </svg>
+          <span class="header__like-num">0</span>
+        </a>
+        <a class="header__cart-link" href="#">
+          <svg class="header__cart-icon cart-icon icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon"></use>
+          </svg>
+          <span class="header__cart-num">10</span>
+        </a>
+      </div>
+      <button class="header__menu icon-box" href="#">
+        <svg class="header__menu-icon menu-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#menu-icon"></use>
+        </svg>
+      </button>
+    </div>
+
+  </nav>
+</header>
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Product list 1</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="shop.html" class="breadcrumbs__link">Product list 1</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<div class="wrapper">
+			<div class="container">
+				<section class="shop">
+  <div class="shop__inner">
+    <div class="shop__filters">
+  <div class="filter__item filter-category">
+    <h3 class="filter__title">Category</h3>
+    <ul class="filter-category__list">
+      <li class="filter-category__item"><a class="filter-category__link" href="#">Chair
+          <svg class="filter-category__icon arrow-category-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+          </svg></a></li>
+      <li class="filter-category__item"><a class="filter-category__link" href="#">Table<svg
+            class="filter-category__icon arrow-category-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+          </svg></a></li>
+      <li class="filter-category__item"><a class="filter-category__link" href="#">Lamp<svg
+            class="filter-category__icon arrow-category-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+          </svg></a></li>
+      <li class="filter-category__item"><a class="filter-category__link" href="#">Watch<svg
+            class="filter-category__icon arrow-category-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+          </svg></a></li>
+      <li class="filter-brands__item"><a class="filter-category__link" href="#">Clock<svg
+            class="filter-category__icon arrow-category-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+          </svg></a></li>
+    </ul>
+  </div>
+  <div class="filter__item filter-price">
+    <h3 class="filter__title">Price</h3>
+    <form class="filter-price__form" action="#"></form>
+    <input class="filter-price__input" type="text" value="" data-type="double" data-min="0" data-max="1000"
+      data-from="100" data-to="500">
+    <label class="filter-price__label" for="">
+      <div class="filter-price__inner">
+        <i>
+          $<span class="filter-price__from"></span>
+        </i>
+        <i>
+          $<span class="filter-price__to"></span>
+        </i>
+      </div>
+    </label>
+  </div>
+  <div class="filter__item filter-brands">
+    <h3 class="filter__title">Brand</h3>
+    <form class="filter-brands__form" action="#">
+      <label class="filter-brands__label">
+        <input class="filter-brands__input" type="checkbox">
+        <div class="filter-brands__checkbox">
+          <span>RFL</span>
+          <span>(10)</span>
+        </div>
+      </label>
+      <label class="filter-brands__label">
+        <input class="filter-brands__input" type="checkbox">
+        <div class="filter-brands__checkbox">
+          <span>Brothers</span>
+          <span>(21)</span>
+        </div>
+      </label>
+      <label class="filter-brands__label">
+        <input class="filter-brands__input" type="checkbox">
+        <div class="filter-brands__checkbox">
+          <span>Regal</span>
+          <span>(3)</span>
+        </div>
+      </label>
+      <label class="filter-brands__label">
+        <input class="filter-brands__input" type="checkbox">
+        <div class="filter-brands__checkbox">
+          <span>Nadia</span>
+          <span>(14)</span>
+        </div>
+      </label>
+      <label class="filter-brands__label">
+        <input class="filter-brands__input" type="checkbox">
+        <div class="filter-brands__checkbox">
+          <span>Otobi</span>
+          <span>(6)</span>
+        </div>
+      </label>
+    </form>
+    <div class="stars" data-rateyo-rating="4"></div>
+  </div>
+  <div class="filter__item filter-recent-products">
+    <h3 class="filter__title">Recent products</h3>
+    <ul class="filter-recent-products__list">
+      <li class="filter-recent-products__item">
+        <div class="filter-recent-products__img-box">
+          <img class="filter-recent-products__img" src="images/products/prod-small-1.png" alt="product-1">
+        </div>
+        <div class="filter-recent-products__content">
+          <h4 class="filter-recent-products__title">Pendant lamp</h4>
+          <div class="filter-recent-products__stars"></div>
+          <span class="filter-recent-products__price">23$</span>
+        </div>
+      </li>
+      <li class="filter-recent-products__item">
+        <div class="filter-recent-products__img-box">
+          <img class="filter-recent-products__img" src="images/products/prod-small-2.png" alt="product-1">
+        </div>
+        <div class="filter-recent-products__content">
+          <h4 class="filter-recent-products__title">Pendant lamp</h4>
+          <div class="filter-recent-products__stars"></div>
+          <span class="filter-recent-products__price">23$</span>
+        </div>
+      </li>
+      <li class="filter-recent-products__item">
+        <div class="filter-recent-products__img-box">
+          <img class="filter-recent-products__img" src="images/products/prod-small-3.png" alt="product-1">
+        </div>
+        <div class="filter-recent-products__content">
+          <h4 class="filter-recent-products__title">Pendant lamp</h4>
+          <div class="filter-recent-products__stars"></div>
+          <span class="filter-recent-products__price">23$</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  
+
+</div>
+    <div class="shop-content__inner">
+  <div class="shop-content__filter">
+    <div class="shop-content__buttons">
+      <button class="shop-content__button shop-content__button--grid shop-content__button--active icon-box" href="#">
+        <svg class="grid-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#menu-icon"></use>
+        </svg>
+      </button>
+      <button class="shop-content__button shop-content__button--list icon-box" href="#">
+        <svg class=" list-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#list"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="shop-content__selects">
+      Sort by
+      <select class="shop-content__sort select-styler" data-placeholder="choose...">
+        <option value="">Default</option>
+        <option value="">Default1</option>
+        <option value="">Default2</option>
+      </select>
+      Show
+      <select class="shop-content__show select-styler" data-placeholder="choose...">
+        <option value="">3</option>
+        <option value="">6</option>
+        <option value="">9</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="shop-content__items shop-content__items--grid">
+    <div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-1-big.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Wooden radio</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-2-big.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Wooden chair</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-3-big.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">White chair</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-4-big.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-5.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Wooden radio</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-6.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Wooden chair</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-7.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">White chair</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-8.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-2.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-3.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div><div class="product-item product-item--grid ">
+  <div class="product-item__img-box">
+    <img class="product-item__img" src="images/products/products-4.png" alt="product-1">
+  </div>
+  <div class="product-item__wrapper-box">
+    <div class="product-item__info">
+      <h4 class="product-item__title">Retro table</h4>
+      <div class="product-item__stars"></div>
+      <span class="product-item__price">$29.00</span>
+    </div>
+    <div class="product-item__content-box">
+      <p class="product-item__text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation
+      </p>
+      <div class="product-item__buttons">
+        <button class="product-item__btn">
+          <svg class="cart-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+          </svg>
+        </button>
+        <button class="product-item__btn">
+          <svg class="like-prod-icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="product-item__actions">
+    <button class="product-item__search-btn icon-box" href="#">
+      <svg class="product-item__search-icon search-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+      </svg>
+    </button>
+    <button class="product-item__cart-btn icon-box" href="#">
+      <svg class="product-item__cart-icon like-prod-icon icon icon-center">
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+  </div>
+
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">1</a></li>
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">2</a></li>
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">3</a></li>
+    </ul>
+    <a href="" class="pagination__next pagination__btn">Next</a>
+  </div>
+</div>
+  </div>
+  
+</section>
+			</div>
+		</div>
+		<div class="partners partners-only">
+			<div class="container">
+				<div class="partners__inner">
+					<img src="images/partners/partners-1.png" alt="partner-1">
+					<img src="images/partners/partners-2.png" alt="partner-2">
+					<img src="images/partners/partners-3.png" alt="partner-3">
+					<img src="images/partners/partners-4.png" alt="partner-4">
+					<img src="images/partners/partners-5.png" alt="partner-5">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__block">
+				<a class="footer__logo logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="logo">
+				</a>
+
+				<address class="footer__address">
+					<a class="footer__location" href="#"><span>address:</span> 4772 Wines Lane Houston, TX 77032</a>
+					<a class="footer__phone" href="tel:+8323475843"><span>Telephone:</span> +832-347-5843</a>
+					<a class="footer__email" href="mailto:contact@Glee.com"><span>Email:</span> contact@Glee.com</a>
+				</address>
+			</div>
+
+			<div class="footer__services">
+				<div class="footer__title title">Services</div>
+
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							About us
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Return Policy
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Our Blog
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Contact Us
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Terms & Condition
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__account">
+				<div class="footer__title title">Account</div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Your Account
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Checkout
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Login
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Register
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__subscribe">
+				<div class="footer__title title">Newsletter</div>
+				<p class="footer__text">
+					Subscribe by our newsletter and get
+					update protidin.
+				</p>
+				<form class="form" action="#">
+					<div class="form__group">
+						<input class="form__input" type="text" name="subscribe" placeholder="">
+						<label class="form__name" for="subscribe">Email address</label>
+					</div>
+					<button class="form__button" type="submit">Subscribe</button>
+				</form>
+			</div>
+
+		</div>
+		<div class="footer__copyright">
+
+			<div class="footer__copyright-text">
+				©2020 CopyRight Example. All rights reserved.
+			</div>
+
+			<ul class="footer__links">
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Home
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						About
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Blog
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Contact
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

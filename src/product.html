@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('html/base/_head.html', {
+'title': 'Product details'
+})
+
+<body>
+	<div class="wrapper">
+		@include('html/layout/_header.html')
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Product details</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="product.html" class="breadcrumbs__link">Product details</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<div class="container">
+			<div class="product">
+				<div class="product-el">
+					<div class="product-el__inner">
+						<div class="slider">
+							<div class="slider-nav">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="images/products/products-b-1-thumb-1.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="images/products/products-b-1-thumb-2.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="images/products/products-b-1-thumb-3.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="slider-main">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="images/products/products-1-big.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="images/products/products-2-big.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="images/products/products-3-big.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="product-el__slide">
+							<ul class="product-el__thumbs">
+								<li class="product-el__thumb">
+									<img src="images/products/products-b-1-thumb-1.png" alt="">
+								</li>
+								<li class="product-el__thumb">
+									<img src="images/products/products-b-1-thumb-2.png" alt="">
+								</li>
+								<li class="product-el__thumb">
+									<img src="images/products/products-b-1-thumb-3.png" alt="">
+								</li>
+							</ul>
+							<ul class="product-el__big-items">
+								<li class="product-el__big-item">
+									<img src="images/products/products-b-1.png" alt="">
+								</li>
+								<li class="product-el__big-item">
+									<img src="images/products/products-b-2.png" alt="">
+								</li>
+								<li class="product-el__big-item">
+									<img src="images/products/products-b-1.png" alt="">
+								</li>
+							</ul>
+						</div> -->
+
+						<div class="product-el__content">
+							<h3 class="product-el__title">
+								Pendant lamp
+							</h3>
+							<div class="product-el__stars" data-rateyo-rating="4"></div>
+							<span class="product-el__price">23$</span>
+							<p class="product-el__text">
+								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+								ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</p>
+							<input c class="product-el__input" type="number" value="1" min="1">
+							<button class="product-el__btn">Add To Cart</button>
+							<ul class="product-el__list">
+								<li class="product-el__li">
+									<div class="product-el__name">SKU:</div>
+									<div class="product-el__desc">014</div>
+								</li>
+								<li class="product-el__li">
+									<div class="product-el__name">Category:</div>
+									<div class="product-el__desc"><a href="#">Lights</a></div>
+								</li>
+								<li class="product-el__li">
+									<div class="product-el__name">Tag:</div>
+									<div class="product-el__desc"><a href="#">Decorative</a></div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="product__tabs"></div>
+				<div class="related-products"></div>
+			</div>
+			<div class="product-tabs">
+				<div class="product-tabs__links">
+					<a href="#product-tab-descr" class="product-tabs__link">Description</a>
+					<a href="#product-tab-info" class="product-tabs__link">Additional information</a>
+					<a href="#product-tab-reviews" class="product-tabs__link product-tabs__link--active">Review
+						<span>(2)</span></a>
+				</div>
+				<div class="product-tabs__content">
+					<div class="product-tabs__item" id="product-tab-descr">
+						<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+							ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor
+							sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+					</div>
+					<div class="product-tabs__item" id="product-tab-info">
+						<h4 class="product-tabs__title">Lorem ipsum dolor</h4>
+						<p>
+							consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+							ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor
+							sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad
+							minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor
+							sit
+							amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim
+							ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor
+							sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+					</div>
+					<div class="product-tabs__item product-tabs__item--active" id="product-tab-reviews">
+						<!-- <div class="comments">
+							<div class="comments__item">
+								<div class="comments__img-box">
+									<img src="images/people/people-1.jpg" alt="people-1">
+								</div>
+								<div class="comments__content">
+									<div class="comments__top">
+										<div class="comments__inner">
+											<span class="comments__name">John Smith</span>
+											<div class="comments__stars"></div>
+										</div>
+										<span class="comments__date">5 years ago</span>
+									</div>
+									<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam impedit
+										dicta commodi veritatis ut repellat amet velit distinctio, ab possimus.Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit. Laboriosam impedit dicta commodi veritatis ut repellat amet velit
+										distinctio, ab possimus</p>
+									<div class="comments__bottom">
+										<span class="comments__reply">Reply</span>
+										<div class="comments__control">
+											<svg class="comments__control--icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#controls"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__item">
+								<div class="comments__img-box">
+									<img src="images/people/people-1.jpg" alt="people-1">
+								</div>
+								<div class="comments__content">
+									<div class="comments__top">
+										<div class="comments__inner">
+											<span class="comments__name">John Smith</span>
+											<div class="comments__stars"></div>
+										</div>
+										<span class="comments__date">5 years ago</span>
+									</div>
+									<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam impedit
+										dicta commodi veritatis ut repellat amet velit distinctio, ab possimus.Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit. Laboriosam impedit dicta commodi veritatis ut repellat amet velit
+										distinctio, ab possimus</p>
+									<div class="comments__bottom">
+										<span class="comments__reply">Reply</span>
+										<div class="comments__control">
+											<svg class="comments__control--icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#controls"></use>
+											</svg>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div> -->
+						<div class="comments">
+							<span class="comments__title">2 Reviews</span>
+							<div class="comments__item comments__item--self">
+								<div class="comments__inner">
+									<div class="comments__img-box">
+										<img class="comments__img" src="images/people/people-3.jpg" alt="">
+									</div>
+									<div class="comments__content">
+										<div class="comments__top">
+											<span class="comments__name">Delores G. Roberts</span>
+											<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+										</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+											fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+											conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+										<button class="comments__reply">Reply
+											<svg class="">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="comments__item comments__item--self">
+								<div class="comments__inner">
+									<div class="comments__img-box">
+										<img class="comments__img" src="images/people/people-3.jpg" alt="">
+									</div>
+									<div class="comments__content">
+										<div class="comments__top">
+											<span class="comments__name">Delores G. Roberts</span>
+											<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+										</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+											fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+											conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+										<button class="comments__reply">Reply
+											<svg class="">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="leave-comment" action="#">
+							<span class="leave-comment__title">Add Review</span>
+							<div class="leave-comment__inner">
+								<label class="leave-comment__label leave-comment__label--name">
+									<input class="leave-comment__name" type="text" placeholder="Name">
+								</label>
+								<label class="leave-comment__label leave-comment__label--email">
+									<input class="leave-comment__email" type="text" placeholder="Email">
+								</label>
+							</div>
+							<label class="leave-comment__label leave-comment__label--text">
+								<textarea class="leave-comment__text" placeholder="Comment"></textarea>
+							</label>
+							<button class="leave-comment__button" type="submit">Post Comment</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="related-products slider-container">
+			<div class="slider-btn">
+				<div class="swiper-button-prev">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+						<path class="cls-1"
+							d="M1547.3,2629.47h16.94l-0.1,2.86a0.3,0.3,0,0,0-.08.2,0.323,0.323,0,0,0,.08.21l0.18,0.17a0.267,0.267,0,0,0,.4,0l4.2-4.21a0.3,0.3,0,0,0,.08-0.2,0.323,0.323,0,0,0-.08-0.21l-4.2-4.21a0.29,0.29,0,0,0-.4,0l-0.18.17a0.323,0.323,0,0,0-.08.21,0.318,0.318,0,0,0,.08.2l0.12,2.86h-16.97a0.3,0.3,0,0,0-.29.3v1.37A0.291,0.291,0,0,0,1547.3,2629.47Z"
+							transform="translate(-1547 -2624)" />
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+						<path class="cls-1"
+							d="M1547.3,2629.47h16.94l-0.1,2.86a0.3,0.3,0,0,0-.08.2,0.323,0.323,0,0,0,.08.21l0.18,0.17a0.267,0.267,0,0,0,.4,0l4.2-4.21a0.3,0.3,0,0,0,.08-0.2,0.323,0.323,0,0,0-.08-0.21l-4.2-4.21a0.29,0.29,0,0,0-.4,0l-0.18.17a0.323,0.323,0,0,0-.08.21,0.318,0.318,0,0,0,.08.2l0.12,2.86h-16.97a0.3,0.3,0,0,0-.29.3v1.37A0.291,0.291,0,0,0,1547.3,2629.47Z"
+							transform="translate(-1547 -2624)" />
+					</svg>
+
+				</div>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product-item swiper-slide">
+						<div class="product-item__img-box">
+							<img class="product-item__img" src="images/products/products-1.png" alt="product-1">
+						</div>
+						<div class="product-item__wrapper-box">
+							<div class="product-item__info">
+								<h4 class="product-item__title">Name 1</h4>
+								<div class="product-item__stars"></div>
+								<span class="product-item__price">123$</span>
+							</div>
+							<div class="product-item__content-box">
+								<p class="product-item__text">
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+									enim ad
+									minim veniam, quis nostrud exercitation
+								</p>
+								<div class="product-item__buttons">
+									<button class="product-item__btn">
+										<svg class="cart-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+										</svg>
+									</button>
+									<button class="product-item__btn">
+										<svg class="like-prod-icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-item__actions">
+							<button class="product-item__search-btn icon-box" href="#">
+								<svg class="product-item__search-icon search-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon cart-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon-prod"></use>
+								</svg>
+							</button>
+							<button class="product-item__cart-btn icon-box" href="#">
+								<svg class="product-item__cart-icon like-prod-icon icon icon-center">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon-prod"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		@include('html/components/_preview-articles.html')
+	</main>
+
+	@include('html/layout/_footer.html')
+	@include('html/base/_script.html')
+
+
+</body>
+
+</html>

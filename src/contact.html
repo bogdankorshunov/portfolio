@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('html/base/_head.html', {
+'title': 'Contact'
+})
+
+<body>
+	<div class="wrapper">
+		@include('html/layout/_header.html')
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Contact</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="contact.html" class="breadcrumbs__link">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<section class="contact">
+			<div class="container">
+				<span class="contact__subtitle">Write Here</span>
+				<h3 class="contact__title">Get In Touch</h3>
+				<div class="contact__items">
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--map">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#map"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Address</span>
+						<address class="contact__info">
+							<p>2416 Mapleview Drive
+								Tampa, FL 33634</p>
+						</address>
+
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--mail">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#mail"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Our Email</span>
+						<address class="contact__info">
+							<span>Main Email: <a href="mailto:contact@website.com">contact@website.com</a></span>
+							<span>Inquiries: <a href="mailto:Info@mail.com">Info@mail.com</a></span>
+						</address>
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--map">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#map"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Our Phone</span>
+						<address class="contact__info">
+							<span>Office Telephone: <a href="tel:+0029129102320">0029129102320</a></span>
+							<span>Mobile: <a href="tel:+0029129102320"><a href="tel:+000 2324 39493">000 2324 39493</a></span>
+						</address>
+
+					</div>
+				</div>
+				<div class="contact__inner">
+					<form class="send-message" action="#">
+						<div class="send-message__inner">
+							<label class="send-message__label send-message__label--name">
+								<input class="send-message__name" type="text" placeholder="Name">
+							</label>
+							<label class="send-message__label send-message__label--email">
+								<input class="send-message__email" type="text" placeholder="Email">
+							</label>
+						</div>
+						<label class="send-message__label send-message__label--text">
+							<textarea class="send-message__text" placeholder="Comment"></textarea>
+						</label>
+						<button class="send-message__button" type="submit">Send Message</button>
+					</form>
+					<div id="map"></div>
+				</div>
+			</div>
+		</section>
+		@include('html/components/_preview-articles.html')
+	</main>
+
+	@include('html/layout/_footer.html')
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
+	<script>
+		let map;
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: { lat: 29.75633971088375, lng: -95.37656122687328 },
+				zoom: 8,
+				styles: [
+					{
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"hue": "#ff4400"
+							},
+							{
+								"saturation": -68
+							},
+							{
+								"lightness": -4
+							},
+							{
+								"gamma": 0.72
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.icon"
+					},
+					{
+						"featureType": "landscape.man_made",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"hue": "#0077ff"
+							},
+							{
+								"gamma": 3.1
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"stylers": [
+							{
+								"hue": "#00ccff"
+							},
+							{
+								"gamma": 0.44
+							},
+							{
+								"saturation": -33
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"stylers": [
+							{
+								"hue": "#44ff00"
+							},
+							{
+								"saturation": -23
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"hue": "#007fff"
+							},
+							{
+								"gamma": 0.77
+							},
+							{
+								"saturation": 65
+							},
+							{
+								"lightness": 99
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"gamma": 0.11
+							},
+							{
+								"weight": 5.6
+							},
+							{
+								"saturation": 99
+							},
+							{
+								"hue": "#0091ff"
+							},
+							{
+								"lightness": -86
+							}
+						]
+					},
+					{
+						"featureType": "transit.line",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"lightness": -48
+							},
+							{
+								"hue": "#ff5e00"
+							},
+							{
+								"gamma": 1.2
+							},
+							{
+								"saturation": -23
+							}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"saturation": -64
+							},
+							{
+								"hue": "#ff9100"
+							},
+							{
+								"lightness": 16
+							},
+							{
+								"gamma": 0.47
+							},
+							{
+								"weight": 2.7
+							}
+						]
+					}
+				],
+			});
+		}
+	</script>
+	@include('html/base/_script.html')
+</body>
+
+</html>

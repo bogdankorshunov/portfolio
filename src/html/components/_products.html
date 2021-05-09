@@ -1,0 +1,90 @@
+<section class="products">
+  <div class="wrapper">
+    <div class="container">
+      @include('_section-title.html', {
+      'title': 'Products of the week',
+      'class': 'products__title'
+      })
+      <div class="products__filter-list filter">
+        <button class="products__filter-item filter-item" data-filter="all">All</button>
+        <button class="products__filter-item filter-item" data-filter=".category-a">Furnitures</button>
+        <button class="products__filter-item filter-item" data-filter=".category-b">Chairs</button>
+        <button class="products__filter-item filter-item" data-filter=".category-c">Lighting</button>
+        <button class="products__filter-item filter-item" data-filter=".category-d">Decor</button>
+      </div>
+      <div class="products__items">
+        @loop('../components/_product-item.html', [
+        {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 1, 'class': 'mix', 'category': 'category-a'},
+        {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 2, 'class': 'mix', 'category': 'category-b'},
+        {'title': 'White chair', 'price': '$29.00', 'img-number': 3, 'class': 'mix', 'category': 'category-c'},
+        {'title': 'Retro table', 'price': '$29.00', 'img-number': 4, 'class': 'mix', 'category': 'category-d'},
+        {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 5, 'class': 'mix', 'category': 'category-a'},
+        {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 6, 'class': 'mix', 'category': 'category-b'},
+        {'title': 'White chair', 'price': '$29.00', 'img-number': 7, 'class': 'mix', 'category': 'category-c'},
+        {'title': 'Retro table', 'price': '$29.00', 'img-number': 8, 'class': 'mix', 'category': 'category-d'},
+        ])
+      </div>
+
+    </div>
+    <div class="more">
+      <div class="more__item more__item--left">
+        <div class="more__img-box">
+          <img class="more__img" src="images/products/products-b-1.png" alt="">
+        </div>
+        <div class="more__info">
+          <h4 class="more__title">Mirum Notare Tellus</h4>
+          <p class="more__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+          <a class="more__btn" href="#">View More</a>
+        </div>
+      </div>
+      <div class="more__item more__item--right">
+        <div class="more__img-box">
+          <img class="more__img" src="images/products/products-b-2.png" alt="">
+        </div>
+        <div class="more__info">
+          <h4 class="more__title">Malesuada Tempor
+            Euismod</h4>
+          <p class="more__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+          <a class="more__btn" href="#">View More</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="new-design">
+        @include('_section-title.html', {
+        'title': 'New Design',
+        'class': 'products__title'
+        })
+        <div class="new-design__filter-list filter">
+          <button class="new-design__filter-item filter-item filter-item--active" data-filter="all">All</button>
+          <button class="new-design__filter-item filter-item" data-filter=".category-e">Furnitures</button>
+          <button class="new-design__filter-item filter-item" data-filter=".category-f">Chairs</button>
+          <button class="new-design__filter-item filter-item" data-filter=".category-g">Lighting</button>
+          <button class="new-design__filter-item filter-item" data-filter=".category-h">Decor</button>
+        </div>
+        <div class="new-design__items">
+          @loop('../../html/components/_new-design-item.html', [
+          {
+          'title': 'Beat Flat Pendant Black', 'subtitle': 'Classic', 'imgNumber': 1, 'classes': 'category-e mix'
+          },
+          {
+          'title': 'Lampe Sur Pieds Bamboo', 'subtitle': 'Classic', 'imgNumber': 2, 'classes': 'category-e mix'
+          },
+          {
+          'title': 'Rattan Rocking Chair', 'subtitle': 'Classic', 'imgNumber': 3, 'classes': 'new-design__item--position category-f mix',
+          },
+          {
+          'title': 'Rattan Rocking Chair', 'subtitle': 'Classic', 'imgNumber': 4, 'classes': 'category-f mix'
+          },
+          {
+          'title': 'Rattan Rocking Chair', 'subtitle': 'Classic', 'imgNumber': 5, 'classes': 'new-design__item--position category-g mix',
+          },
+          {
+          'title': 'Lampe Sur Pieds Bamboo', 'subtitle': 'Classic', 'imgNumber': 6, 'classes': 'category-h mix'
+          },
+          ])
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

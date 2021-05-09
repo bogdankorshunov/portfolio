@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  line-height: 1.5;
+  color: $color-font-2;
+  font-size: 16px;
+  @extend %font-exo500;
+}
+
+.main {
+  flex-grow: 1;
+}
+.container {
+  margin: 0 auto;
+  max-width: $maxWidthContainer + px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  background-color: $color-main;
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  &:hover {
+    box-shadow: 0px 51px 80px rgba(0, 0, 0, 0.19),
+      0px 23.5788px 36.9864px rgba(0, 0, 0, 0.140918),
+      0px 13.4913px 21.1628px rgba(0, 0, 0, 0.119088),
+      0px 8.18911px 12.8457px rgba(0, 0, 0, 0.10259),
+      0px 4.9343px 7.74008px rgba(0, 0, 0, 0.0874098),
+      0px 2.74774px 4.31018px rgba(0, 0, 0, 0.0709116),
+      0px 1.18178px 1.85378px rgba(0, 0, 0, 0.0490817);
+  }
+}
+
+.title {
+  color: $color-font-8;
+  font-size: 16px;
+  @extend %font-dmsans700;
+}
+
+a {
+  color: inherit;
+}
+
+.section-title {
+  text-align: center;
+  color: $color-font-9;
+  font-size: 36px;
+  @extend %font-dmsans700;
+}
+
+.section-title {
+  text-align: center;
+  color: $color-font-7;
+  font-size: 36px;
+  font-weight: bold;
+  @extend %font-dmsans700;
+}
+

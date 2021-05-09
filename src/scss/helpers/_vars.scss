@@ -1,0 +1,133 @@
+// colors
+$color-main: #302B27;
+$color-accent-1: #845EC2;
+$color-accent-2: #0FAA80;
+$color-accent-3: #F9F871;
+
+// fonts
+%font-barlow600 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+%font-exo500 {
+  font-family: 'Exo2', sans-serif;
+  font-weight: 500;
+}
+
+%smooth-transition-color {
+  transition: color 0.3s ease-in-out;
+}
+
+%smooth-transition-svg {
+  transition: stroke 0.3s ease-in-out;
+}
+
+
+
+
+$maxWidthContainer: 1170;
+$maxWidthWrapper: 1770;
+
+
+$color-font-1: #243f4d;
+$color-font-2: #243f4d;
+$color-font-3: #414141;
+$color-font-4: #585858;
+$color-font-5: #234969;
+$color-font-6: #7b7b7b;
+$color-font-7: #1a1a1a; //section title
+$color-font-8: #a3bbc8; //product price
+$color-font-9: #1f2044;
+$color-font-10: #191919;
+
+$color-bg-1: #edf1f4;
+$color-bg-2: #fcd7b6;
+$color-bg-3: #a3bbc8;
+$color-bg-4: #fef7f0;
+$color-bg-5: #feefe2;
+$color-bg-6: #f8f8f8; //new-design-item
+$color-bg-7: #f6f6f6; //social button
+
+$color-icon-1: #243f4d;
+$color-icon-2: #fff;
+
+$color-decor-1: #fde7d3;
+$color-decor-2: #e8e4df;
+$color-decor-3: #dae4e9;
+$color-button-1: #a3bbc8;
+
+
+%font-dmsans400 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+}
+
+%font-dmsans500 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+}
+
+%font-dmsans700 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+}
+
+%font-rubik300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+%font-rubik400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%font-rubik500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+%font-rubik700 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+%font-poppins600 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+%font-poppins700 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+%hover-shadow {
+  box-shadow: 0px 12px 60px 6px rgba(45, 45, 45, 0.1);
+}
+
+%box-transition {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%width {
+  box-sizing: border-box;
+  width: 270px !important;
+}

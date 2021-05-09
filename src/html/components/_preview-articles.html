@@ -1,0 +1,51 @@
+<section class="preview-articles">
+  <div class="container">
+    <div class="preview-articles__inner">
+      @include('../../html/components/_section-title.html', {
+      'title': 'Our Insights & Articles',
+      'class': 'home-articles__title'
+      })
+      <a href="" class="preview-articles__view-all-link">View All </a>
+    </div>
+  </div>
+  <div class="preview-articles__wrapper">
+    <div class="container">
+      <div class="preview-articles__items">
+        @loop('../components/_preview-articles__item.html', [
+        {
+        'img': '1',
+        'category': 'news',
+        'text': 'Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+        'date': '28 January, 2020',
+        'author': 'admin'
+        },
+        {
+        'img': '2',
+        'category': 'news',
+        'text': 'Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ',
+        'date': '28 January, 2020',
+        'author': 'admin'
+        },
+        {
+        'img': '3',
+        'category': 'news',
+        'text': 'Rncididunt ut labore et dolore magna aliqua. Ut enim',
+        'date': '28 January, 2020',
+        'author': 'admin'
+        },
+        ])
+      </div>
+      <div class="partners bg-partners">
+        <div class="container">
+          <div class="partners__inner">
+            <img src="images/partners/partners-1.png" alt="partner-1">
+            <img src="images/partners/partners-2.png" alt="partner-2">
+            <img src="images/partners/partners-3.png" alt="partner-3">
+            <img src="images/partners/partners-4.png" alt="partner-4">
+            <img src="images/partners/partners-5.png" alt="partner-5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

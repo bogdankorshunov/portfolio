@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Contact</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+  <nav class="header__nav">
+
+    <a class="logo" href="/">
+      <img class="logo__img" src="images/logo.png" alt="logo">
+    </a>
+
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link " href="#">Home +</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="about.html">About</a>
+        
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Services</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Pages +</a>
+        <ul class="dropdown">
+          <li class="dropdown__item"><a class="dropdown__link" href="about.html">About</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="blog.html">Blog</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="blog-post.html">Blog Post</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="contact.html">Contact</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="login.html">Login</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="shop.html">Shop</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="product.html">Product</a></li>
+        </ul>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">News</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <div class="header__actions">
+      <button class="header__search-btn icon-box" href="#">
+        <svg class="header__search-icon search-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search-icon"></use>
+        </svg>
+      </button>
+      <div class="header__actions-group">
+        <a class="header__like-link" href="#">
+          <svg class="header__like-icon like-icon icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#like-icon"></use>
+          </svg>
+          <span class="header__like-num">0</span>
+        </a>
+        <a class="header__cart-link" href="#">
+          <svg class="header__cart-icon cart-icon icon">
+            <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#cart-icon"></use>
+          </svg>
+          <span class="header__cart-num">10</span>
+        </a>
+      </div>
+      <button class="header__menu icon-box" href="#">
+        <svg class="header__menu-icon menu-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#menu-icon"></use>
+        </svg>
+      </button>
+    </div>
+
+  </nav>
+</header>
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Contact</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="contact.html" class="breadcrumbs__link">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<section class="contact">
+			<div class="container">
+				<span class="contact__subtitle">Write Here</span>
+				<h3 class="contact__title">Get In Touch</h3>
+				<div class="contact__items">
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--map">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#map"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Address</span>
+						<address class="contact__info">
+							<p>2416 Mapleview Drive
+								Tampa, FL 33634</p>
+						</address>
+
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--mail">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#mail"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Our Email</span>
+						<address class="contact__info">
+							<span>Main Email: <a href="mailto:contact@website.com">contact@website.com</a></span>
+							<span>Inquiries: <a href="mailto:Info@mail.com">Info@mail.com</a></span>
+						</address>
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon-box">
+							<svg class="contact__icon contact__icon--map">
+								<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#map"></use>
+							</svg>
+						</div>
+						<span class="contact__heading">Our Phone</span>
+						<address class="contact__info">
+							<span>Office Telephone: <a href="tel:+0029129102320">0029129102320</a></span>
+							<span>Mobile: <a href="tel:+0029129102320"><a href="tel:+000 2324 39493">000 2324 39493</a></span>
+						</address>
+
+					</div>
+				</div>
+				<div class="contact__inner">
+					<form class="send-message" action="#">
+						<div class="send-message__inner">
+							<label class="send-message__label send-message__label--name">
+								<input class="send-message__name" type="text" placeholder="Name">
+							</label>
+							<label class="send-message__label send-message__label--email">
+								<input class="send-message__email" type="text" placeholder="Email">
+							</label>
+						</div>
+						<label class="send-message__label send-message__label--text">
+							<textarea class="send-message__text" placeholder="Comment"></textarea>
+						</label>
+						<button class="send-message__button" type="submit">Send Message</button>
+					</form>
+					<div id="map"></div>
+				</div>
+			</div>
+		</section>
+		<section class="preview-articles">
+  <div class="container">
+    <div class="preview-articles__inner">
+      <h2 class="home-articles__title section-title">Our Insights & Articles</h2>
+      <a href="" class="preview-articles__view-all-link">View All </a>
+    </div>
+  </div>
+  <div class="preview-articles__wrapper">
+    <div class="container">
+      <div class="preview-articles__items">
+        <div class="preview-articles__item">
+  <div class="preview-articles__img-box">
+    <img class="preview-articles__img" src="images/home-articles/home-articles-1.jpg" alt="">
+  </div>
+  <div class="preview-articles__content">
+    <div class="preview-articles__category">
+      news
+    </div>
+    <a class="preview-articles__link" href="#">
+      <p class="preview-articles__text">
+        Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+    </a>
+    <div class="preview-articles__info">
+      <span class="preview-articles__date">
+        28 January, 2020
+      </span>
+      <span class="preview-articles__author">
+        By admin
+      </span>
+    </div>
+  </div>
+</div><div class="preview-articles__item">
+  <div class="preview-articles__img-box">
+    <img class="preview-articles__img" src="images/home-articles/home-articles-2.jpg" alt="">
+  </div>
+  <div class="preview-articles__content">
+    <div class="preview-articles__category">
+      news
+    </div>
+    <a class="preview-articles__link" href="#">
+      <p class="preview-articles__text">
+        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+      </p>
+    </a>
+    <div class="preview-articles__info">
+      <span class="preview-articles__date">
+        28 January, 2020
+      </span>
+      <span class="preview-articles__author">
+        By admin
+      </span>
+    </div>
+  </div>
+</div><div class="preview-articles__item">
+  <div class="preview-articles__img-box">
+    <img class="preview-articles__img" src="images/home-articles/home-articles-3.jpg" alt="">
+  </div>
+  <div class="preview-articles__content">
+    <div class="preview-articles__category">
+      news
+    </div>
+    <a class="preview-articles__link" href="#">
+      <p class="preview-articles__text">
+        Rncididunt ut labore et dolore magna aliqua. Ut enim
+      </p>
+    </a>
+    <div class="preview-articles__info">
+      <span class="preview-articles__date">
+        28 January, 2020
+      </span>
+      <span class="preview-articles__author">
+        By admin
+      </span>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="partners bg-partners">
+        <div class="container">
+          <div class="partners__inner">
+            <img src="images/partners/partners-1.png" alt="partner-1">
+            <img src="images/partners/partners-2.png" alt="partner-2">
+            <img src="images/partners/partners-3.png" alt="partner-3">
+            <img src="images/partners/partners-4.png" alt="partner-4">
+            <img src="images/partners/partners-5.png" alt="partner-5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	</main>
+
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__block">
+				<a class="footer__logo logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="logo">
+				</a>
+
+				<address class="footer__address">
+					<a class="footer__location" href="#"><span>address:</span> 4772 Wines Lane Houston, TX 77032</a>
+					<a class="footer__phone" href="tel:+8323475843"><span>Telephone:</span> +832-347-5843</a>
+					<a class="footer__email" href="mailto:contact@Glee.com"><span>Email:</span> contact@Glee.com</a>
+				</address>
+			</div>
+
+			<div class="footer__services">
+				<div class="footer__title title">Services</div>
+
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							About us
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Return Policy
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Our Blog
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Contact Us
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Terms & Condition
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__account">
+				<div class="footer__title title">Account</div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Your Account
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Checkout
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Login
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							Register
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__subscribe">
+				<div class="footer__title title">Newsletter</div>
+				<p class="footer__text">
+					Subscribe by our newsletter and get
+					update protidin.
+				</p>
+				<form class="form" action="#">
+					<div class="form__group">
+						<input class="form__input" type="text" name="subscribe" placeholder="">
+						<label class="form__name" for="subscribe">Email address</label>
+					</div>
+					<button class="form__button" type="submit">Subscribe</button>
+				</form>
+			</div>
+
+		</div>
+		<div class="footer__copyright">
+
+			<div class="footer__copyright-text">
+				©2020 CopyRight Example. All rights reserved.
+			</div>
+
+			<ul class="footer__links">
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Home
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						About
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Blog
+					</a>
+				</li>
+				<li class="footer__element">
+					<a class="footer__element-link" href="#">
+						Contact
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
+	<script>
+		let map;
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: { lat: 29.75633971088375, lng: -95.37656122687328 },
+				zoom: 8,
+				styles: [
+					{
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"hue": "#ff4400"
+							},
+							{
+								"saturation": -68
+							},
+							{
+								"lightness": -4
+							},
+							{
+								"gamma": 0.72
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.icon"
+					},
+					{
+						"featureType": "landscape.man_made",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"hue": "#0077ff"
+							},
+							{
+								"gamma": 3.1
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"stylers": [
+							{
+								"hue": "#00ccff"
+							},
+							{
+								"gamma": 0.44
+							},
+							{
+								"saturation": -33
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"stylers": [
+							{
+								"hue": "#44ff00"
+							},
+							{
+								"saturation": -23
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"hue": "#007fff"
+							},
+							{
+								"gamma": 0.77
+							},
+							{
+								"saturation": 65
+							},
+							{
+								"lightness": 99
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"gamma": 0.11
+							},
+							{
+								"weight": 5.6
+							},
+							{
+								"saturation": 99
+							},
+							{
+								"hue": "#0091ff"
+							},
+							{
+								"lightness": -86
+							}
+						]
+					},
+					{
+						"featureType": "transit.line",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"lightness": -48
+							},
+							{
+								"hue": "#ff5e00"
+							},
+							{
+								"gamma": 1.2
+							},
+							{
+								"saturation": -23
+							}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"saturation": -64
+							},
+							{
+								"hue": "#ff9100"
+							},
+							{
+								"lightness": 16
+							},
+							{
+								"gamma": 0.47
+							},
+							{
+								"weight": 2.7
+							}
+						]
+					}
+				],
+			});
+		}
+	</script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<div class="shop-content__inner">
+  <div class="shop-content__filter">
+    <div class="shop-content__buttons">
+      <button class="shop-content__button shop-content__button--grid shop-content__button--active icon-box" href="#">
+        <svg class="grid-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#menu-icon"></use>
+        </svg>
+      </button>
+      <button class="shop-content__button shop-content__button--list icon-box" href="#">
+        <svg class=" list-icon icon icon-center">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#list"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="shop-content__selects">
+      Sort by
+      <select class="shop-content__sort select-styler" data-placeholder="choose...">
+        <option value="">Default</option>
+        <option value="">Default1</option>
+        <option value="">Default2</option>
+      </select>
+      Show
+      <select class="shop-content__show select-styler" data-placeholder="choose...">
+        <option value="">3</option>
+        <option value="">6</option>
+        <option value="">9</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="shop-content__items shop-content__items--grid">
+    @loop('../components/_product-item.html', [
+    {'title': 'Wooden radio', 'price': '$29.00', 'img-number': '1-big', 'class': 'product-item--grid', 'category': ''},
+    {'title': 'Wooden chair', 'price': '$29.00', 'img-number': '2-big', 'class': 'product-item--grid', 'category': ''},
+    {'title': 'White chair', 'price': '$29.00', 'img-number': '3-big', 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': '4-big', 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Wooden radio', 'price': '$29.00', 'img-number': 5, 'class': 'product-item--grid', 'category': ''},
+    {'title': 'Wooden chair', 'price': '$29.00', 'img-number': 6, 'class': 'product-item--grid', 'category': ''},
+    {'title': 'White chair', 'price': '$29.00', 'img-number': 7, 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': 8, 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': 1, 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': 2, 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': 3, 'class': 'product-item--grid', 'category': '' },
+    {'title': 'Retro table', 'price': '$29.00', 'img-number': 4, 'class': 'product-item--grid', 'category': '' },
+    ])
+  </div>
+
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">1</a></li>
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">2</a></li>
+      <li class="pagination__item"><a class="pagination__link pagination__btn" href="#">3</a></li>
+    </ul>
+    <a href="" class="pagination__next pagination__btn">Next</a>
+  </div>
+</div>

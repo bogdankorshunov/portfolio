@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('html/base/_head.html', {
+'title': 'Blog Details'
+})
+
+<body>
+	<div class="wrapper">
+		@include('html/layout/_header.html')
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Blog Details</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="blog.html" class="breadcrumbs__link">Blog</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="blog-post.html" class="breadcrumbs__link">Blog Details</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<div class="container">
+			<div class="blog">
+				<div class="blog-inner">
+					<div class="blog-posts">
+						<div class="blog-posts__item">
+							<div class="blog-posts__box">
+								<div class="blog-posts__img-box">
+									<img class="blog-posts__img" src="images/pages/blog/blog-1.jpg" alt="blog image">
+								</div>
+								<div class="blog-posts__info">
+									<div class="blog-posts__date">
+										<svg class="blog-posts__icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#calendar"></use>
+										</svg>
+										<time>28 January, 2020</time>
+									</div>
+									<div class="blog-posts__name">
+										<svg class="blog-posts__icon">
+											<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#user"></use>
+										</svg>
+										<p><span>By</span>Admin</p>
+									</div>
+								</div>
+							</div>
+							<h3 class="blog-posts__title">Fonsectetur adipisicing eiusmod </h3>
+							<p class="blog-posts__descr">
+								Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+								venia Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							</p>
+							<p class="blog-posts__text blog-article__text">consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem
+								ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+								fugiat nulla pariatur. </p>
+							<blockquote class="blog-posts__blockquote blog-article__blockquote">
+								<p>Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris </p>
+								<cite>Wiusmod tempor</cite>
+							</blockquote>
+							<div class="blog-posts__img-descr blog-article__img-descr blog-article__img-descr--left">
+								<img class="blog-posts__img-left blog-article__img blog-article__img--left"
+									src="images/pages/blog/blog-2.jpg" alt="blog-post image">
+								<div class="blog-article__content">
+									<div class="blog-posts__heading blog-article__heading">Riusmod tempor incididunt</div>
+									<p class="blog-posts__small-text blog-article__small-text">consectetur adipisicing elit, sed do
+										eiusmod tempor incididunt ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea commodo </p>
+								</div>
+							</div>
+							<div class="blog-article__heading">Kajtsal jervcm eoaspckred</div>
+							<p class="blog-article__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+								ex ea commodo </p>
+							<div class="blog-article__author">
+								<div class="blog-article__inner">
+									<div class="blog-article__about">
+										<img src="images/people/people-4.jpg" alt="author">
+										<div class="blog-article__info">
+											<p class="blog-article__name">Mark N. Hernandez</p>
+											<span class="blog-article__position">Designer</span>
+										</div>
+									</div>
+									<div class="blog-article__links">
+										<div class="blog-article__wrapper">
+											<span class="blog-article__label">Tags:</span>
+											<ul class="blog-article__tags">
+												<li class="blog-article__tag"><a href="#">All</a></li>
+												<li class="blog-article__tag"><a href="#">Trending</a></li>
+											</ul>
+										</div>
+										<div class="blog-article__wrapper">
+											<span class="blog-article__label">Share:</span>
+											<ul class="blog-article__socials">
+												<li class="blog-article__social">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="8.13" height="15.44"
+															viewBox="0 0 8.13 15.44">
+															<path data-name="Path 1"
+																d="M1069.19,1899.12c0.41,0,.83.03,1.24,0.05,0.27,0.01.54,0.04,0.79,0.07l-0.02,2.49H1071c-0.27,0-.54-0.01-0.82-0.01-0.2,0-.4.01-0.61,0.01a1.041,1.041,0,0,0-1.18,1.09c-0.02.6-.03,1.9-0.03,1.97,0.03,0,.68.01,1.34,0.01,0.32,0,.64,0,0.87-0.01h0.53c-0.13.96-.26,1.87-0.39,2.8h-2.35l-0.06,6.97h-2.89l0.06-6.99h-2.37l0.02-2.77h2.38v-0.21c0.01-.56,0-1.12.02-1.68a7.581,7.581,0,0,1,.09-1.06,3.145,3.145,0,0,1,1.27-2.08,3.6,3.6,0,0,1,2.08-.64C1069.04,1899.13,1069.11,1899.12,1069.19,1899.12Z"
+																transform="translate(-1063.09 -1899.12)" />
+														</svg>
+													</a>
+												</li>
+												<li class="blog-article__social">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="14.31" height="11.62"
+															viewBox="0 0 14.31 11.62">
+															<path id="Path_2" data-name="Path 2"
+																d="M1109.69,1902.28c-0.11.16-.21,0.3-0.33,0.45a5.7,5.7,0,0,1-1.07,1.01l-0.05.09a8.22,8.22,0,0,1-.07,1.31,8.818,8.818,0,0,1-.77,2.61,8.712,8.712,0,0,1-1.6,2.3,7.864,7.864,0,0,1-4.05,2.25,8.967,8.967,0,0,1-1.64.2h-0.26a8.172,8.172,0,0,1-4.42-1.27l-0.07-.04a5.322,5.322,0,0,0,.69.04,6.049,6.049,0,0,0,2.25-.44,5.834,5.834,0,0,0,1.4-.82,2.9,2.9,0,0,1-2.71-2.03,3.287,3.287,0,0,0,.54.05,2.82,2.82,0,0,0,.71-0.09l0.05-.02a2.9,2.9,0,0,1-2.32-2.9,2.914,2.914,0,0,0,1.31.35,2.914,2.914,0,0,1-1.2-1.78,2.877,2.877,0,0,1,.34-2.12,8.311,8.311,0,0,0,6.02,3.07c-0.02-.12-0.03-0.22-0.05-0.33a2.8,2.8,0,0,1,.45-1.91,2.853,2.853,0,0,1,1.99-1.33,3.439,3.439,0,0,1,.54-0.04,2.833,2.833,0,0,1,2.03.86,0.139,0.139,0,0,0,.1.05,0.09,0.09,0,0,0,.05-0.01,5.547,5.547,0,0,0,1.71-.65l0.04-.02a2.919,2.919,0,0,1-1.25,1.6A5.859,5.859,0,0,0,1109.69,1902.28Z"
+																transform="translate(-1095.38 -1900.88)" />
+														</svg>
+													</a>
+												</li>
+												<li class="blog-article__social">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+															<g>
+																<g>
+																	<path
+																		d="M3.588 16.94c-1.95-.505-3.114-1.775-3.424-3.75-.23-1.45-.255-8.19.164-9.654C.874 1.629 2.147.51 4.075.193 4.95.05 6.658 0 8.385 0a85.7 85.7 0 0 1 4.199.098c1.18.062 2.261.442 3.14 1.284.835.8 1.263 1.802 1.371 2.935.128 1.353.211 7.748-.187 9.247-.533 1.96-1.813 3.12-3.797 3.439-.742.12-2.745.191-4.744.191-2.047 0-4.091-.075-4.779-.254zm.918-15.255c-1.5.172-2.508 1.098-2.747 2.59-.247 1.58-.245 7.492-.06 8.68.19 1.236.89 2.085 2.122 2.43.668.188 2.666.254 4.626.254 1.803 0 3.575-.056 4.24-.13 1.514-.165 2.515-1.097 2.754-2.602.247-1.513.247-7.03.106-8.446-.154-1.513-1.079-2.507-2.575-2.742-.74-.112-2.525-.162-4.3-.162-1.712 0-3.416.047-4.166.128zM4.19 8.597a4.443 4.443 0 0 1 4.446-4.406 4.37 4.37 0 0 1 4.372 4.413 4.451 4.451 0 0 1-4.446 4.406A4.366 4.366 0 0 1 4.19 8.597zm1.553-.027a2.827 2.827 0 0 0 2.803 2.879h.026a2.88 2.88 0 0 0 2.876-2.824 2.823 2.823 0 0 0-2.803-2.88H8.62A2.88 2.88 0 0 0 5.744 8.57zm6.444-4.551a1.034 1.034 0 0 1 1.03-1.03h.013c.567 0 1.026.464 1.021 1.037a1.043 1.043 0 0 1-1.043 1.029 1.028 1.028 0 0 1-1.021-1.036z" />
+																</g>
+															</g>
+														</svg>
+													</a>
+												</li>
+												<li class="blog-article__social">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="23" height="15" viewBox="0 0 23 15">
+															<g>
+																<g>
+																	<path
+																		d="M6.751 14.35c-1.409-.083-2.69-.525-3.823-1.36C1.466 11.911.545 10.474.158 8.7A6.496 6.496 0 0 1 .02 6.768a7.044 7.044 0 0 1 1.62-4.102C2.658 1.415 3.955.6 5.505.207a5.8 5.8 0 0 1 1.19-.186C6.922.013 7.15 0 7.378 0a6.741 6.741 0 0 1 3.398.932c.7.4 1.098.808 1.27.932-.717.705-1.405 1.395-2.108 2.086-.522-.45-1.099-.863-2.099-1.016a4.322 4.322 0 0 0-.613-.044c-2.007 0-3.688 1.45-4.136 3.353a3.942 3.942 0 0 0-.1 1.298c.153 1.768 1.337 3.218 2.935 3.736.407.128.83.189 1.254.189.1 0 .198-.003.298-.01.753-.048 1.459-.248 2.098-.67 1.075-.732 1.423-1.878 1.425-2.161H7.154l.021-2.77.007-.117h6.754c.364 2.107.036 4.323-1.275 6.056-.907 1.195-2.114 1.948-3.554 2.32a7.734 7.734 0 0 1-2.356.236zm11.439-4.054v-.07l.019-2.43h-2.507V7.72l.015-1.816v-.07h2.507l.018-2.437v-.069h1.962v.07l-.02 2.437h2.507v.069l-.014 1.816v.076H20.17l-.019 2.43v.07z" />
+																</g>
+															</g>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments">
+								<span class="comments__title">3 Comments</span>
+								<div class="comments__item comments__item--self">
+									<div class="comments__inner">
+										<div class="comments__img-box">
+											<img class="comments__img" src="images/people/people-3.jpg" alt="">
+										</div>
+										<div class="comments__content">
+											<div class="comments__top">
+												<span class="comments__name">Delores G. Roberts</span>
+												<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+											</div>
+											<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+												fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+												conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+											<button class="comments__reply">Reply
+												<svg class="">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="comments__item comments__item--answer">
+									<div class="comments__inner comments__inner--answer">
+										<div class="comments__img-box">
+											<img class="comments__img" src="images/people/people-3.jpg" alt="">
+										</div>
+										<div class="comments__content">
+											<div class="comments__top">
+												<span class="comments__name">Delores G. Roberts</span>
+												<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+											</div>
+											<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+												fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+												conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+											<button class="comments__reply">Reply
+												<svg class="">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="comments__item comments__item--self">
+									<div class="comments__inner">
+										<div class="comments__img-box">
+											<img class="comments__img" src="images/people/people-3.jpg" alt="">
+										</div>
+										<div class="comments__content">
+											<div class="comments__top">
+												<span class="comments__name">Delores G. Roberts</span>
+												<time class="comments__date"><span>add </span>11 Oct 2020</time>
+
+											</div>
+											<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+												fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per
+												conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices </p>
+											<button class="comments__reply">Reply
+												<svg class="">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-reply"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form class="leave-comment" action="#">
+								<span class="leave-comment__title">Leave A Comment</span>
+								<div class="leave-comment__inner">
+									<label class="leave-comment__label leave-comment__label--name">
+										<input class="leave-comment__name" type="text" placeholder="Name">
+									</label>
+									<label class="leave-comment__label leave-comment__label--email">
+										<input class="leave-comment__email" type="text" placeholder="Email">
+									</label>
+								</div>
+								<label class="leave-comment__label leave-comment__label--text">
+									<textarea class="leave-comment__text" placeholder="Comment"></textarea>
+								</label>
+								<button class="leave-comment__button" type="submit">Post Comment</button>
+							</form>
+						</div>
+					</div>
+					<div class="blog-aside">
+						<form class="blog-aside__search-form">
+							<input class="blog-aside__search-input" type="text">
+							<button class="blog-aside__search-btn" type="submit">
+								<svg class="blog-aside__search-icon">
+									<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+						<div class="blog-aside__category">
+							<div class="filter__item filter-category">
+								<h3 class="filter__title">Category</h3>
+								<ul class="filter-category__list">
+									<li class="filter-category__item"><a class="filter-category__link" href="#">Chair
+											<svg class="filter-category__icon arrow-category-icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+											</svg></a></li>
+									<li class="filter-category__item"><a class="filter-category__link" href="#">Table<svg
+												class="filter-category__icon arrow-category-icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+											</svg></a></li>
+									<li class="filter-category__item"><a class="filter-category__link" href="#">Lamp<svg
+												class="filter-category__icon arrow-category-icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+											</svg></a></li>
+									<li class="filter-category__item"><a class="filter-category__link" href="#">Watch<svg
+												class="filter-category__icon arrow-category-icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+											</svg></a></li>
+									<li class="filter-brands__item"><a class="filter-category__link" href="#">Clock<svg
+												class="filter-category__icon arrow-category-icon">
+												<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#arrow-category"></use>
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="blog-aside__recent">
+							<h3 class="filter__title">Recent posts</h3>
+							<ul class="recent-posts">
+								<li class="recent-posts__item">
+									<div class="recent-posts__inner">
+										<div class="recent-posts__img-box">
+											<img class="recent-posts__img" src="images/pages/blog/blog-1-thumb.jpg" alt="blog image">
+										</div>
+										<div class="recent-posts__content">
+											<p class="recent-posts__title">Corem ipsum dolor tetur adipisicing elit</p>
+											<div class="blog-posts__date">
+												<svg class="blog-posts__icon">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#calendar"></use>
+												</svg>
+												<time>28 January, 2020</time>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="recent-posts__item">
+									<div class="recent-posts__inner">
+										<div class="recent-posts__img-box">
+											<img class="recent-posts__img" src="images/pages/blog/blog-1-thumb.jpg" alt="blog image">
+										</div>
+										<div class="recent-posts__content">
+											<p class="recent-posts__title">Corem ipsum dolor tetur adipisicing elit</p>
+											<div class="blog-posts__date">
+												<svg class="blog-posts__icon">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#calendar"></use>
+												</svg>
+												<time>28 January, 2020</time>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="recent-posts__item">
+									<div class="recent-posts__inner">
+										<div class="recent-posts__img-box">
+											<img class="recent-posts__img" src="images/pages/blog/blog-1-thumb.jpg" alt="blog image">
+										</div>
+										<div class="recent-posts__content">
+											<p class="recent-posts__title">Corem ipsum dolor tetur adipisicing elit</p>
+											<div class="blog-posts__date">
+												<svg class="blog-posts__icon">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#calendar"></use>
+												</svg>
+												<time>28 January, 2020</time>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="recent-posts__item">
+									<div class="recent-posts__inner">
+										<div class="recent-posts__img-box">
+											<img class="recent-posts__img" src="images/pages/blog/blog-1-thumb.jpg" alt="blog image">
+										</div>
+										<div class="recent-posts__content">
+											<p class="recent-posts__title">Corem ipsum dolor tetur adipisicing elit</p>
+											<div class="blog-posts__date">
+												<svg class="blog-posts__icon">
+													<use xmlns="http://www.w3.org/2000/svg" xlink:href="images/sprite.svg#calendar"></use>
+												</svg>
+												<time>28 January, 2020</time>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="partners partners-only">
+			<div class="container">
+				<div class="partners__inner">
+					<img src="images/partners/partners-1.png" alt="partner-1">
+					<img src="images/partners/partners-2.png" alt="partner-2">
+					<img src="images/partners/partners-3.png" alt="partner-3">
+					<img src="images/partners/partners-4.png" alt="partner-4">
+					<img src="images/partners/partners-5.png" alt="partner-5">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	@include('html/layout/_footer.html')
+	@include('html/base/_script.html')
+</body>
+
+</html>

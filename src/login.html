@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('html/base/_head.html', {
+'title': 'Log in'
+})
+
+<body>
+	<div class="wrapper">
+		@include('html/layout/_header.html')
+	</div>
+	<div class="breadcrumbs">
+		<h2 class="breadcrumbs__title">Log in</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="/" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="login.html" class="breadcrumbs__link">Log in</a>
+			</li>
+		</ul>
+	</div>
+	<main class="main">
+		<div class="wrapper">
+			@include('html/components/_login.html')
+		</div>
+		<div class="partners partners-only">
+			<div class="container">
+				<div class="partners__inner">
+					<img src="images/partners/partners-1.png" alt="partner-1">
+					<img src="images/partners/partners-2.png" alt="partner-2">
+					<img src="images/partners/partners-3.png" alt="partner-3">
+					<img src="images/partners/partners-4.png" alt="partner-4">
+					<img src="images/partners/partners-5.png" alt="partner-5">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	@include('html/layout/_footer.html')
+	@include('html/base/_script.html')
+</body>
+
+</html>
