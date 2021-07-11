@@ -3,6 +3,9 @@ const intro = document.querySelector(".intro");
 const menuList = document.querySelector(".menu__list");
 const header = document.querySelector(".header");
 const mail = document.querySelector(".header__mail");
+const previewProjects = document.querySelectorAll('.preview-projects__item');
+const previewBtn = document.querySelectorAll('.preview-projects__btn');
+
 
 menuBtn.addEventListener("click", function (e) {
   capture: true;
@@ -29,7 +32,7 @@ menuBtn.addEventListener("click", function (e) {
 VanillaTilt.init(document.querySelectorAll(".preview-projects__item"), {
   max: 2,
   speed: 1000,
-  scale: 1,
+  scale: 1.01,
   perspective: 2000,
   glare: true,
   "max-glare": 0.4

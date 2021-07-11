@@ -516,15 +516,9 @@
       background-color: hsl(61, 84%, 36%);
     }
   }
-  // text-align: center;
-  // position: relative;
-  // margin-bottom: 500px;
-
-  // background-size: 50%;
-  // // background-size: cover;
 }
-
 .preview-projects {
+  margin-bottom: 65px;
   &__items {
     margin-bottom: 35px;
     display: grid;
@@ -535,23 +529,48 @@
   }
 
   &__item {
+    display: block;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
+    &--2 {
+      .preview-projects__descr {
+        svg {
+          top: -52px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .preview-projects__title {
+          top: -400px;
+        }
 
+        .preview-projects__descr {
+          background-color: rgba(0, 0, 0, 0.43);
+          bottom: 0;
+          top: 0;
+          svg {
+            top: -100px;
+            transform: rotate(180deg) translateX(50%);
+          }
+        }
+      }
+    }
     &:hover {
+      cursor: pointer;
       .preview-projects__title {
         top: -400px;
       }
 
       .preview-projects__descr {
-        background-color: rgba(0, 0, 0, 0.33);
+        background-color: rgba(0, 0, 0, 0.43);
         bottom: 0;
         top: 0;
         svg {
-          transform: rotate(180deg);
+          top: -100px;
+          transform: rotate(180deg) translateX(50%);
         }
       }
     }
@@ -564,6 +583,13 @@
     background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-watch-6s-202009_GEO_RU?wid=600&hei=315&fmt=jpeg&qlt=95&.v=1599936765000");
     background-size: cover;
     background-position: center;
+    &--popup {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
     &:hover {
       box-shadow: 0px 51px 80px rgba(0, 0, 0, 0.19),
         0px 23.5788px 36.9864px rgba(0, 0, 0, 0.140918),
@@ -572,7 +598,15 @@
         0px 4.9343px 7.74008px rgba(0, 0, 0, 0.0874098),
         0px 2.74774px 4.31018px rgba(0, 0, 0, 0.0709116),
         0px 1.18178px 1.85378px rgba(0, 0, 0, 0.0490817);
-      // transform: translateZ(50px) scaleY(1);
+      .preview-projects__descr {
+        svg {
+          top: 10px;
+          opacity: 1;
+        }
+      }
+      svg {
+        opacity: 0;
+      }
     }
   }
 
@@ -587,9 +621,10 @@
   }
 
   &__descr {
-    transition: all 0.3s ease-in-out;
+    width: 50%;
+    transition: all 0.5s ease-out;
     position: absolute;
-    bottom: -147px;
+    bottom: -115px;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -624,6 +659,53 @@
     font-size: 16px;
     @extend %font-exo500;
     padding: 10px;
+  }
+}
+.services {
+  &__title {
+    &::after {
+      background-color: hsl(130, 84%, 36%);
+    }
+  }
+  &__bg {
+    position: relative;
+    max-width: 920px;
+    min-height: 430px;
+    background-color: #e9eaef;
+    border-radius: 25px;
+    margin: 0 auto;
+  }
+  &__items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  &__item {
+    min-width: 285px;
+    background-color: #fff;
+    padding: 18px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+      0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+      0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725);
+    border-radius: 25px;
+    &:not(:last-child) {
+      margin-right: 125px;
+    }
+  }
+  &__img {
+    margin-bottom: 10px;
+  }
+  &__heading {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 .main-title {
