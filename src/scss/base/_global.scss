@@ -71,3 +71,26 @@ a {
   @extend %font-dmsans700;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
+
+.footer {
+  flex-shrink: 0;
+  &__icons {
+    display: flex;
+
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    &:hover {
+        // color: $color-accent-2;
+    }
+  }
+
+  &__copyrights {
+  }
+}

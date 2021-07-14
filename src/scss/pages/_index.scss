@@ -138,6 +138,7 @@
 }
 
 .intro {
+  margin-bottom: 100px;
   position: relative;
   margin-top: 70px;
   height: calc(100vh - 70px);
@@ -493,6 +494,7 @@
 }
 
 .main-title {
+  color: $color-main;
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
@@ -518,7 +520,7 @@
   }
 }
 .preview-projects {
-  margin-bottom: 65px;
+  margin-bottom: 100px;
   &__items {
     margin-bottom: 35px;
     display: grid;
@@ -611,6 +613,7 @@
   }
 
   &__title {
+    color: $color-main;
     transition: all 0.5s ease;
     font-weight: 700;
     font-size: 20px;
@@ -662,6 +665,7 @@
   }
 }
 .services {
+  margin-bottom: 100px;
   &__title {
     &::after {
       background-color: hsl(130, 84%, 36%);
@@ -698,6 +702,7 @@
     margin-bottom: 10px;
   }
   &__heading {
+    color: $color-main;
     margin-bottom: 5px;
     font-size: 24px;
     line-height: 150%;
@@ -713,4 +718,120 @@
   }
 }
 .btn {
+}
+
+.preview-blog {
+  &__title {
+    &::after {
+      background-color: hsl(0, 82%, 36%);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 270px;
+    @extend %font-exo500;
+    // background: rgba(255, 15, 15, 0.3);
+  }
+
+  &__category {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    font-size: 30px;
+    color: $color-main;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      color: $color-accent-1;
+      .preview-blog__category--icon {
+        stroke: $color-accent-1;
+        transform: rotate(45deg);
+        animation: linkHoverPulse 1.5s infinite;
+        animation-timing-function: ease-in-out;
+      }
+    }
+    @extend %font-exo500;
+    &--icon {
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: 45%;
+      transform: traslateY(-50%);
+      right: -20px;
+
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+      stroke: $color-main;
+      stroke-linecap: round;
+      stroke-width: 2;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__article {
+    &:not(:last-child) {
+       margin-bottom: 10px;       
+    }
+    &:hover {
+      .preview_blog__heading {
+        color: $color-accent-2;
+      }
+    }
+  }
+  &__heading {
+    cursor: pointer;
+    display: inline-block;
+    @extend %font-exo500;
+    @extend %smooth-transition-color;
+    &:hover {
+      color: $color-accent-2;
+    }
+  }
+
+  &__info {
+    
+    @extend %smooth-transition-color;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: $color-second;
+  }
+
+  &__group {
+  }
+
+  &__time {
+    margin-right: 5px;
+  }
+
+  &__date {
+  }
+
+  &__views {
+    &--icon {
+      margin-right: 2px;
+      margin-top: 5px;
+      width: 14px;
+      height: 10px;
+    }
+  }
+}
+
+@keyframes linkHoverPulse {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: -30px;
+  }
+  100% {
+    right: -20px;
+  }
 }

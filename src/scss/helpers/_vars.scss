@@ -3,12 +3,14 @@ $color-main: #302B27;
 $color-accent-1: #845EC2;
 $color-accent-2: #0FAA80;
 $color-accent-3: #F9F871;
+$color-second: #908D8A;
 
 // fonts
 %font-barlow600 {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
 }
+
 %font-exo500 {
   font-family: 'Exo2', sans-serif;
   font-weight: 500;
@@ -22,6 +24,9 @@ $color-accent-3: #F9F871;
   transition: stroke 0.3s ease-in-out;
 }
 
+%smooth-transition-color {
+  transition: color 0.3s ease-in-out;
+}
 
 
 
